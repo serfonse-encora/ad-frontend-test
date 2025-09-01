@@ -30,6 +30,18 @@ jest.mock('next/link', () => {
   };
 });
 
+// Mock cart service
+jest.mock('../../services/cart.service', () => ({
+  getCartItems: jest.fn(() => []),
+}));
+
+// Mock cart component
+jest.mock('../cart/component.cart', () => {
+  return function MockComponentCart() {
+    return <div data-testid='cart-component'>Mock Cart Component</div>;
+  };
+});
+
 describe('ComponentNavbar', () => {
   it('renders the navbar with correct structure', () => {
     render(<ComponentNavbar />);
@@ -41,7 +53,8 @@ describe('ComponentNavbar', () => {
       'd-flex',
       'justify-content-space-between',
       'bg-surface-secondary',
-      'p-1'
+      'pt-1',
+      'pb-1'
     );
   });
 
@@ -62,7 +75,7 @@ describe('ComponentNavbar', () => {
 
     const cartLink = screen.getByRole('link');
     expect(cartLink).toBeInTheDocument();
-    expect(cartLink).toHaveAttribute('href', '/');
+    expect(cartLink).toHaveAttribute('href', '/cart');
     expect(cartLink).toHaveClass('my-auto', 'text-body', 'text-grey');
   });
 

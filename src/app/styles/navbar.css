@@ -1,0 +1,11 @@
+nav {
+  padding-right: 128px;
+  padding-left: 128px;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}

@@ -1,3 +1,8 @@
+section {
+  padding-right: 128px;
+  padding-left: 128px;
+}
+
 .d-flex {
   display: flex;
 }
@@ -28,6 +33,10 @@
   align-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .gap-4 {
   gap: 4px;
 }
@@ -50,6 +59,10 @@
 
 .gap-32 {
   gap: 32px;
+}
+
+.gap-48 {
+  gap: 48px;
 }
 
 .text-center {
@@ -87,12 +100,24 @@
 }
 
 /* Responsive: stack columns on small screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  section {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
   .columns,
   .columns.equal-2,
   .columns.equal-3,
   .columns.equal-4,
   .columns.equal-5 {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }

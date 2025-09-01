@@ -3,9 +3,16 @@
 @import './styles/utils.css';
 @import './styles/layout.css';
 @import './styles/button.css';
+@import './styles/navbar.css';
+@import './styles/components.css';
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  margin: 0;
 }

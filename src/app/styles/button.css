@@ -2,12 +2,12 @@
   background-color: var(--grey);
   color: var(--white);
   border: none;
-  border-radius: 16px;
-  padding: 6px;
-  width: fit-content;
+  border-radius: 8px;
+  padding: 16px 24px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 .button.outline {
