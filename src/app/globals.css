@@ -1,0 +1,11 @@
+@import './styles/variables.css';
+@import './styles/typography.css';
+@import './styles/utils.css';
+@import './styles/layout.css';
+@import './styles/button.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

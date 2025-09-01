@@ -1,0 +1,98 @@
+.d-flex {
+  display: flex;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-arround {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.columns.equal-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columns.equal-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.columns.equal-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.columns.equal-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 768px) {
+  .columns,
+  .columns.equal-2,
+  .columns.equal-3,
+  .columns.equal-4,
+  .columns.equal-5 {
+    grid-template-columns: 1fr;
+  }
+}
