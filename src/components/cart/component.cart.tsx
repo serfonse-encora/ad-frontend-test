@@ -127,7 +127,7 @@ const ComponentCart = () => {
         </div>
 
         {/* Main Cart Layout */}
-        <div className='d-flex gap-48 flex-wrap'>
+        <div className='d-flex gap-48 flex-mobile'>
           {/* Left Side - Cart Items */}
           <div className='flex-2'>
             <div className='cart-items'>

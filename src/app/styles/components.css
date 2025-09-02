@@ -64,6 +64,10 @@ footer {
     flex-direction: column;
   }
 
+  .flex-mobile {
+    flex-wrap: wrap;
+  }
+
   .d-flex > .flex-1,
   .d-flex > .flex-2 {
     width: 100%;
